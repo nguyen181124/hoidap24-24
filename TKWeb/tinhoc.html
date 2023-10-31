@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỏi đáp 24/24</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="header">
+        <a href="trangchu.html">
+            <img src="img/logo.png" alt="" id="logo">
+        </a>
+        <div class="search">
+            <i class="ti-search"></i>
+            <input type="text" class="search_input" placeholder="Tìm kiếm câu hỏi...">
+        </div>
+        <div id="login_button">
+            <a href="dangki.html" class="register_button ">Đăng kí</a>
+            <a href="#login" class="login_button ">Đăng nhập</a>
+        </div>
+        <div class="user">
+            <div class="information">
+                <a href="nguoidung1.html" class="name_user">Nguyễn Tuấn Nguyên</a>
+            </div>
+            <a href="nguoidung1.html" class="border img"></a>
+        </div>
+    </div>
+    <div id="login">
+        <div class="login_layout">
+            <div class="close">
+                <i class="ti-close"></i>
+            </div>
+            <h1>Đăng nhập</h1>
+            <input type="text" id="txt1" placeholder="User name"><br>
+            <input type="text" id="txt2" placeholder="Password"><br>
+            <input type="submit" id="smLogin" onclick="kiemTra()" value="Đăng nhập">
+        </div>
+    </div>
+    <div id="body">
+        <div class="content">
+            <div class="subject">
+                <div class="border">
+                    <a href="trangchu.html" class="ti-home list1">
+                        <p>Tất cả</p>
+                    </a>
+                </div>
+                <a href="toan.html" class="ti-tag list ">
+                    <p>Toán Học</p>
+                </a>
+                <a href="vatly.html" class="ti-tag list">
+                    <p>Vật Lý</p>
+                </a>
+                <a href="hoa.html" class="ti-tag list">
+                    <p>Hóa Học</p>
+                </a>
+                <a href="tienganh.html" class="ti-tag list">
+                    <p>Tiếng Anh</p>
+                </a>
+                <a href="nguvan.html" class="ti-tag list">
+                    <p>Ngữ Văn</p>
+                </a>
+                <a href="lichsu.html" class="ti-tag list">
+                    <p>Lịch Sử</p>
+                </a>
+                <a href="dialy.html" class="ti-tag list">
+                    <p>Địa Lý</p>
+                </a>
+                <a href="gdcd.html" class="ti-tag list">
+                    <p>GDCD</p>
+                </a>
+                <a href="sinhhoc.html" class="ti-tag list">
+                    <p>Sinh Học</p>
+                </a>
+                <a href="tinhoc.html" class="ti-tag list onclick">
+                    <p>Tin Học</p>
+                </a>
+            </div>
+
+            <div class="all_question">
+                <div class="name_subject">
+                    <p>Tin Học</p>
+                </div>
+                <label for="class">Lớp:</label>
+                <input list="class" class="select_class">
+                <datalist name="class" id="class">
+                    <option value="12"></option>
+                    <option value="11"></option>
+                    <option value="10"></option>
+                    <option value="9"></option>
+                    <option value="8"></option>
+                    <option value="7"></option>
+                    <option value="6"></option>
+                    <option value="5"></option>
+                    <option value="4"></option>
+                    <option value="3"></option>
+                    <option value="2"></option>
+                    <option value="1"></option>
+                </datalist>
+
+                <label for="question">Trạng thái câu hỏi:</label>
+                <input list="question" class="select_question">
+                <datalist name="question" id="question">
+                    <option value="Mới nhất"></option>
+                    <option value="Một Tuần"></option>
+                    <option value="Một tháng"></option>
+                    <option value="Tất cả"></option>
+                </datalist>
+                <p class="new_question">Câu hỏi</p>
+                <div class="more_question">
+                    <div class="user">
+                        <a href="nguoidung1.html" class="border img1"></a>
+                        <div class="information">
+                            <a href="nguoidung1.html" class="name_user">Nguyễn Tuấn Nguyên</a>
+                            <div class="date">30 phút</div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        Xác định các tập hợp sau nêu tính chất đặc trưng
+                        A={0,1,2,3,4} ; B={0,4,8,12,16} ;C={1,2,4,8,16}
+                    </div>
+                    <div class="answer">
+                        <a href="cau1toan.html" class="answer_button ti-comment">
+                            <p>Trả lời</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="more_question">
+                    <div class="user">
+                        <a href="nguoidung2.html" class="border img4"></a>
+                        <div class="information">
+                            <a href="nguoidung2.html" class="name_user">Tạ Phương Nam</a>
+                            <div class="date">30 phút</div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        1 chiếc tivi 72 inch xác định độ dày đường chéo của màn hình tivi biết biết inch sắp sĩ 2,5 cm
+                        biết 1inch sắp sĩ 2,54 cm ( làm tròn kết quả đến hàng 10)
+                    </div>
+                    <div class="answer">
+                        <a href="cau2toan.html" class="answer_button ti-comment">
+                            <p>Trả lời</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="more_question">
+                    <div class="user">
+                        <a href="nguoidung3.html" class="border img3"></a>
+                        <div class="information">
+                            <a href="nguoidung3.html" class="name_user">Mạc Tiến Thành Đạt</a>
+                            <div class="date">30 phút</div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        Xác định các tập hợp sau nêu tính chất đặc trưng
+                        A={0,1,2,3,4} ; B={0,4,8,12,16} ;C={1,2,4,8,16}
+                    </div>
+                    <div class="answer">
+                        <a href="cau1toan.html" class="answer_button ti-comment">
+                            <p>Trả lời</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="more_question">
+                    <div class="user">
+                        <a href="nguoidung4.html" class="border img2"></a>
+                        <div class="information">
+                            <a href="nguoidung4.html" class="name_user">Nguyễn Hữu Phước</a>
+                            <div class="date">30 phút</div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        1 chiếc tivi 72 inch xác định độ dày đường chéo của màn hình tivi biết biết inch sắp sĩ 2,5 cm
+                        biết 1inch sắp sĩ 2,54 cm ( làm tròn kết quả đến hàng 10)
+                    </div>
+                    <div class="answer">
+                        <a href="cau2toan.html" class="answer_button ti-comment">
+                            <p>Trả lời</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="another_question">
+                    <a href="#">Xem thêm</a>
+                </div>
+            </div>
+            <div class="featured_question">
+                <p class="content_makequestion">Bạn muốn hỏi điều gì?</p>
+                <a href="hoi.html" class="makequestion_button">Đặt câu hỏi</a>
+                <div class="featured_questions">
+                    <p> Câu hỏi nổi bật</p>
+                    <div class="hot_question">
+                        <a href="cau1toan.html">1. Xác định các tập hợp sau nêu tính chất đặc trưng
+                            A={0,1,2,3,4} ; B={0,4,8,12,16} ;C={1,2,4,8,16}</a>
+                        <a href="cau2toan.html">2. 1 chiếc tivi 72 inch xác định độ dày đường chéo của màn hình tivi biết biết inch
+                            sắp
+                            sĩ 2,5 cm biết 1inch sắp sĩ 2,54 cm ( làm tròn kết quả đến hàng 10)
+                        </a>
+                        <a href="cau1ly.html">Ném vật theo phương ngang thì có tầm xa của vật lớn nhất không?</a>
+                        <a href="cau1toan.html">1. Xác định các tập hợp sau nêu tính chất đặc trưng
+                            A={0,1,2,3,4} ; B={0,4,8,12,16} ;C={1,2,4,8,16}</a>
+                        <a href="cau2toan.html">2. 1 chiếc tivi 72 inch xác định độ dày đường chéo của màn hình tivi biết biết inch
+                            sắp
+                            sĩ 2,5 cm biết 1inch sắp sĩ 2,54 cm ( làm tròn kết quả đến hàng 10)
+                        </a>
+                        <a href="cau1ly.html">Ném vật theo phương ngang thì có tầm xa của vật lớn nhất không?</a>
+                    </div>
+                </div>
+                <div class="hot">
+                    <p>Thành viên nổi bật</p>
+                    <div class="hot_user">
+                        <div class="user">
+                            <a href="nguoidung1.html" class="border img1"></a>
+                            <div class="information">
+                                <a href="nguoidung1.html" class="name_user">Nguyễn Tuấn Nguyên</a>
+                                <div class="date">1979 điểm</div>
+                            </div>
+                        </div>
+
+                        <div class="user">
+                            <a href="nguoidung4.html" class="border img2"></a>
+                            <div class="information">
+                                <a href="nguoidung4.html" class="name_user">Nguyễn Hữu Phước</a>
+                                <div class="date">1979 điểm</div>
+                            </div>
+                        </div>
+
+                        <div class="user">
+                            <a href="nguoidung3.html" class="border img3"></a>
+                            <div class="information">
+                                <a href="nguoidung3.html" class="name_user">Mạc Tiến Thành Đạt</a>
+                                <div class="date">1979 điểm</div>
+                            </div>
+                        </div>
+
+                        <div class="user">
+                            <a href="nguoidung2.html" class="border img4"></a>
+                            <div class="information">
+                                <a href="nguoidung2.html" class="name_user">Tạ Phương Nam</a>
+                                <div class="date">1979 điểm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#">
+            <img src="img/logo.png" alt="" id="logo_footer">
+        </a>
+        <div class="link">
+            <a href="https://www.facebook.com/profile.php?id=100034069633018" class="ti-facebook ti_link"></a>
+            <a href="#" class="ti-youtube ti_link"></a>
+            <a href="#" class="ti-skype ti_link"></a>
+        </div>
+    </div>
+    <script>
+        var userName = "Nguyen"
+        var Password = [181124]
+        function kiemTra() {
+            var input1 = document.getElementById("txt1");
+            var input2 = document.getElementById("txt2");
+            if (input1.value == "" && input2.value == "") {
+                alert("Nhập thông tin vào");
+                return false;
+            }
+            else if (input1.value == "") {
+                alert("Bạn phải nhập vào tên tài khoản");
+                return false;
+            }
+            else if (input2.value == "") {
+                alert("Bạn phải nhập mật khẩu");
+                return false;
+            }
+            else if (input1.value != userName || input2.value != Password) {
+                alert("Bạn sai tên đăng nhập hoặc mật khẩu");
+                return false;
+            }
+            else if (input1.value == userName && input2.value == Password) {
+                content = document.getElementById("login");
+                content.style.display = "none";
+
+                content = document.getElementById("login_button");
+                content.style.display = "none";
+
+                var content = document.getElementsByClassName("user");
+                for (var i = 0; i < content.length; i++) {
+                    content[i].style.display = "flex";
+                }
+            }
+        }
+
+        btnShowMe = document.getElementsByClassName("ti-close");
+        content = document.getElementById("login");
+        btnShowMe[0].onclick = function () {
+            content.style.display = "none";
+        };
+
+        btnShowMe = document.getElementsByClassName("login_button");
+        content = document.getElementById("login");
+        btnShowMe[0].onclick = function () {
+            content.style.display = "flex";
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỏi đáp 24/24</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="header">
+        <a href="trangchu.html">
+            <img src="img/logo.png" alt="" id="logo">
+        </a>
+        <div class="search">
+            <i class="ti-search"></i>
+            <input type="text" class="search_input" placeholder="Tìm kiếm câu hỏi...">
+        </div>
+        <div id="login_button">
+            <a href="dangki.html" class="register_button ">Đăng kí</a>
+            <a href="#login" class="login_button ">Đăng nhập</a>
+        </div>
+        <div class="user">
+            <div class="information">
+                <a href="" class="name_user">Mạc Tiến Thành Đạt</a>
+            </div>
+            <a href="" class="border img3"></a>
+        </div>
+    </div>
+    <div id="login">
+        <div class="login_layout">
+            <div class="close">
+                <i class="ti-close"></i>
+            </div>
+            <h1>Đăng nhập</h1>
+            <input type="text" id="txt1" placeholder="User name"><br>
+            <input type="text" id="txt2" placeholder="Password"><br>
+            <input type="submit" id="smLogin" onclick="kiemTra()" value="Đăng nhập">
+        </div>
+    </div>
+    <div id="body">
+        <div class="content">
+            <div class="information_user">
+                <div class="head_information">
+                    <div class="border_user img3"></div>
+                    <h1>Mạc Tiến Thành Đạt</h1>
+                </div>
+
+                <div class="body_user">
+                    <h2>Giới thiệu bản thân:</h2>
+                    <p>Trường: Đại học Công Nghệ Đông Á</p>
+                    <p>Mã sinh viên: 20222440</p>
+                    <p>Lớp: DCCNTT 13.10.13</p>
+                    <p>Ngày sinh: 18/11/2004</p>
+                    <p>Sở thích: Đạp xe, Nghe nhạc, Xem phim,..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#">
+            <img src="img/logo.png" alt="" id="logo_footer">
+        </a>
+        <div class="link">
+            <a href="https://www.facebook.com/profile.php?id=100034069633018" class="ti-facebook ti_link"></a>
+            <a href="#" class="ti-youtube ti_link"></a>
+            <a href="#" class="ti-skype ti_link"></a>
+        </div>
+    </div>
+    <script>
+        var userName = "Nguyen"
+        var Password = [181124]
+        function kiemTra() {
+            var input1 = document.getElementById("txt1");
+            var input2 = document.getElementById("txt2");
+            if (input1.value == "" && input2.value == "") {
+                alert("Nhập thông tin vào");
+                return false;
+            }
+            else if (input1.value == "") {
+                alert("Bạn phải nhập vào tên tài khoản");
+                return false;
+            }
+            else if (input2.value == "") {
+                alert("Bạn phải nhập mật khẩu");
+                return false;
+            }
+            else if (input1.value != userName || input2.value != Password) {
+                alert("Bạn sai tên đăng nhập hoặc mật khẩu");
+                return false;
+            }
+            else if (input1.value == userName && input2.value == Password) {
+                alert("Đăng nhập thành công");
+                content = document.getElementById("login");
+                content.style.display = "none";
+
+                content = document.getElementById("login_button");
+                content.style.display = "none";
+
+                var content = document.getElementsByClassName("user");
+                for (var i = 0; i < content.length; i++) {
+                    content[i].style.display = "flex";
+                }
+            }
+        }
+
+        btnShowMe = document.getElementsByClassName("ti-close");
+        content = document.getElementById("login");
+        btnShowMe[0].onclick = function () {
+            content.style.display = "none";
+        };
+
+        btnShowMe = document.getElementsByClassName("login_button");
+        content = document.getElementById("login");
+        btnShowMe[0].onclick = function () {
+            content.style.display = "flex";
+        };
+    </script>
+</body>
+
+</html>
